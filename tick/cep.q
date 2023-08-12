@@ -7,7 +7,7 @@ upd:{[t;d]
         $[t in tables[];
                 checkTable[t;d];
                 insert[t;d];
-		aggTbl[];
+		updAggTbl[];
 		@[neg[h];(`.u.upd; `agg; flip get each agg); h"::"]
 		];
         };
@@ -15,7 +15,7 @@ upd:{[t;d]
 // Aggregation Table Function.
 // Convert trade/quote values into Aggregation table
 // Schema: agg:([] time:"n"$(); sym:`$(); minPx:"f"$(); maxPx:"f"$(); minBid:"f"$(); maxBid:"f"$(); minAsk:"f"$(); maxAsk:"f"$(); volume: "j"$(); ToB:"f"$());
-aggTbl:{aggTrade:: select minPx: min px, maxPx: max px, volume:sum[price*size] by sym from trade;
+updAggTbl:{aggTrade:: select minPx: min px, maxPx: max px, volume:sum[price*size] by sym from trade;
 	aggQuote:: select minBid: min bid, maxBid: max bid, minAsk: min ask, maxAsk: max ask, ToB:max[bid] - min[ask] by sym from quote;
 	aggTbl:: `time`sym xcols update time:.z.N from 0!aggTrade lj aggQuote;}
 
@@ -42,5 +42,14 @@ if[not "w"=first string .z.o;system "sleep 1"];
 
 .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
 
+// Timer function to publish data
 .z.ts:{
+  s:n?syms;
+  $[0<flag mod 10;
+    h(".u.upd";`quote;(n#.z.N;s;getbid'[s];getask'[s];n?1000;n?1000)); 
+    h(".u.upd";`trade;(n#.z.N;s;getprice'[s];n?1000))];
+  flag+:1; }
+
+// Trigger timer every second
+\t 1000
 
