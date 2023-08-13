@@ -2,7 +2,7 @@
 /2008.09.09 .k ->.q
 
 // Load logging.q
-system "l ",getenv[`ADVANCEDKDB],"/log/logging.q"
+system "l ",getenv[`AdvancedKDB],"/log/logging.q"
 
 // Update function.
 // Insert data (d) into table (t)

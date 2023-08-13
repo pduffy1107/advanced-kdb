@@ -1,0 +1,15 @@
+'2023.08.13T20:31:16.669 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+'2023.08.13T20:37:21.090 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+'2023.08.13T20:39:46.446 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+'2023.08.13T20:40:56.332 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+'2023.08.13T20:42:27.062 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^

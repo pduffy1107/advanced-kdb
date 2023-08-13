@@ -1,0 +1,25 @@
+'2023.08.13T20:31:16.667 /log/logging.q. OS reports: No such file or directory
+  [3]  \l /log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`ADVANCEDKDB],"/log/logging.q"
+                                                         ^
+'2023.08.13T20:37:21.091 /log/logging.q. OS reports: No such file or directory
+  [3]  \l /log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`ADVANCEDKDB],"/log/logging.q"
+                                                         ^
+'2023.08.13T20:39:46.445 /log/logging.q. OS reports: No such file or directory
+  [3]  \l /log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`ADVANCEDKDB],"/log/logging.q"
+                                                         ^
+'2023.08.13T20:40:56.329 /log/logging.q. OS reports: No such file or directory
+  [3]  \l /log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`ADVANCEDKDB],"/log/logging.q"
+                                                         ^
+'2023.08.13T20:42:27.073 /log/logging.q. OS reports: No such file or directory
+  [3]  \l /log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`ADVANCEDKDB],"/log/logging.q"
+                                                         ^

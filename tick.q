@@ -2,7 +2,7 @@
 /q tick.q SRC [DST] [-p 5010] [-o h]
 system"l tick/",(src:first .z.x,enlist"sym"),".q"
 
-// Load u.q and logger.q
+// Load u.q and logging.q
 \l tick/u.q
 \l log/logging.q`
 
@@ -113,14 +113,3 @@ if[not system"t"; .log.out["Enabling Non-Batch Mode..."];
  .u.L - tp log filename, e.g. `:./sym2008.09.11
  .u.l - handle to tp log file
  .u.d - date
-
-/test
->q tick.q
->q tick/ssl.q
-
-/run
->q tick.q sym  .  -p 5010	/tick
->q RDB/rdb_taq.q :5010 -p 5011	/rdb_taq
->q RDB/rdb_tob.q :5010 -p 5012  /rdb_tob
->q sym            -p 5012	/hdb
->q tick/ssl.q sym :5010		/feed

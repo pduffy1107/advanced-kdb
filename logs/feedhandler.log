@@ -1,0 +1,15 @@
+'2023.08.13T20:31:16.670 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/feed.q:1: h:neg hopen `$":localhost:5010" 	/connect to tickerplant
+                                                             ^
+'2023.08.13T20:37:21.092 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/feed.q:1: h:neg hopen `$":localhost:5010" 	/connect to tickerplant
+                                                             ^
+'2023.08.13T20:39:46.447 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/feed.q:1: h:neg hopen `$":localhost:5010" 	/connect to tickerplant
+                                                             ^
+'2023.08.13T20:40:56.332 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/feed.q:1: h:neg hopen `$":localhost:5010" 	/connect to tickerplant
+                                                             ^
+'2023.08.13T20:42:27.077 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/feed.q:1: h:neg hopen `$":localhost:5010" 	/connect to tickerplant
+                                                             ^
