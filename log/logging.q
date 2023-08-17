@@ -1,18 +1,15 @@
 // Script tasked with logging events in Tick processes
 
-\d .log
-
 // Convert data type to string (unless already a string)
-str:{$[10=abs type x;(::);string]x};
-
-// Get details of the calling process
-details:{"USER: ",str .z.u,"; HANDLE: ",str .z.w,"; MEM: ",str .Q.w[]}
+.log.str:{$[10=abs type x;(::);string]x};
 
 // Normal log writeout
-out:{[x](neg 1)@ string[.z.p],"| ",.log.details[],"| INFO: ",str x};
+												// Changing format of memory profile to be more reader-friendly:
+												// "used:359600 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0....
+.log.out:{-1 string[.z.p],"| USER: ",.log.str[.z.u],"; HANDLE: ",.log.str[.z.w],"| INFO: ",.log.str[x],"; MEM: ",ssr[ssr[.Q.s[.Q.w[]]; "| "; ":"];"\n";" | "]};
 
 // Error log writeout
-err:{[x](neg 2)@ string[.z.p],"| ",.log.details[],"| ERROR: ",str x};
+.log.err:{-2 (string[.z.p],"| USER: ",.log.str[.z.u],"; HANDLE: ",.log.str[.z.w],"| ERROR: ",.log.str[x],"; MEM: ",ssr[ssr[.Q.s[.Q.w[]]; "| "; ":"];"\n";" | "])};
 
 
 // Connection Opened

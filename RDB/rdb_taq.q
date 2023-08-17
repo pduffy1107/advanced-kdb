@@ -2,16 +2,12 @@
 /2008.09.09 .k ->.q
 
 // Load logging.q
-system "l ",getenv[`ADVANCEDKDB],"/log/logging.q"
-
-// RDB Process which subscribes to the Trade and Quote tables in the Tickerplant
-
-\p 5011
+system "l ",getenv[`AdvancedKDB],"/log/logging.q"
 
 // Update function.
 // Insert data (d) into table (t)
 upd:{[t;d] MC+:1;
-	$[t in tables[];
+	if[t in tables[];
 		checkTable[t;d];
 		insert[t;d]];
 	};
@@ -20,9 +16,9 @@ upd:{[t;d] MC+:1;
 // Datatype checker Function
 // If data is not in table format, convert to table
 checkTable:{[t;d] 
-	$[not (type d) in 98 99h;
+	if[not (type d) in 98 99h;
 		schema: key flip value t;
-		d: $[0>type first d;
+		d: if[0>type first d;
 			enlist schema!d;
 			flip schema!d];];
 	};
@@ -48,7 +44,7 @@ if[not "w"=first string .z.o;system "sleep 1"];
 	(.[;();:;].)each x;					// x is a list of two-item lists, each containing a table name (as a symbol) and an empty schema for that table.
 	if[null first y;:()];					// y, is a single two-item list, where the last element is the TP logfile and the first element is the number of 
 								//	messages written to this logfile so far. If 'first y' is empty, no new messages have been written to log
-	.log.out["Replaying log file."]
+	.log.out["Replaying log file."];
 	-11!y;							// Replay appropriate number of messages from the start of the TP logfile
 	system "cd ",1_-10_string first reverse y};		// Change current directory of RDB to root of on-disk partitioned database so .Q.hdpf writes to correct directory
 / HARDCODE \cd if other than logdir/db

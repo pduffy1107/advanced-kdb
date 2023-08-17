@@ -39,9 +39,9 @@ add:{
 // Subscription Function
 // When a process attempts to subscribe to the TP, add them to .u.w
 sub:{
-	if[x~`; 				// if no tables are passed, subscribe to all tables
+	if[x~`;					// if no tables are passed, subscribe to all tables
 		:sub[;y]each t];
-	if[not x in t;				// if table does not exist, return an error
+	if[not x in t; 				// if table does not exist, return an error
 		'x];
 	del[x].z.w;add[x;y]}			// Remove client from .u.w if already there and re-add with symbols
 

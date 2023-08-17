@@ -15,8 +15,8 @@ source $DIR/config.env
 cd ${AdvancedKDB}
 
 startTP="q tick.q ${Sym_File} ${TP_Log} -p ${TP_PORT} -t ${Tick_Timer} </dev/null >> ${Log_Dir}/tp.log 2>&1 &"
-startRDB="q ${RDB_Dir}/rdb_taq.q -p ${RDB_TAQ_PORT} </dev/null >> ${Log_Dir}/rdb_taq.log 2>&1 &"
-startAGG="q ${RDB_Dir}/rdb_agg.q -p ${RDB_AGG_PORT} </dev/null >> ${Log_Dir}/rdb_agg.log 2>&1 &"
+startRDB="q ${RDB_Dir}/rdb_taq.q :${TP_PORT} -p ${RDB_TAQ_PORT} </dev/null >> ${Log_Dir}/rdb_taq.log 2>&1 &"
+startAGG="q ${RDB_Dir}/rdb_agg.q :${TP_PORT} -p ${RDB_AGG_PORT} </dev/null >> ${Log_Dir}/rdb_agg.log 2>&1 &"
 startFH="q tick/feed.q -p ${FH_PORT} </dev/null >> ${Log_Dir}/feedhandler.log 2>&1 &"
 startCEP="q tick/cep.q -p ${CEP_PORT} </dev/null >> ${Log_Dir}/cep.log 2>&1 &"
 
@@ -49,7 +49,7 @@ while [[ $RUN -eq 0 ]]; do
 		read -p "You have chosen to start all processes. Do you wish to continue? [Y/N] " EXIT
 		if [ "${EXIT^^}" == "N" ]; then
 			confirmExit
-		else
+		elif [ "${EXIT^^}" == "Y" ]; then
 			echo "${LINE}${LINE}${LINE}"
 			echo "${HASH} Starting All Processes ${HASH}"
 			echo "${LINE}${LINE}${LINE}"
@@ -82,14 +82,16 @@ while [[ $RUN -eq 0 ]]; do
                         echo ""
 			echo "All Processes have started successfully."
 			RUN=1
+		else 
+			echo "$EXIT is not a valid input. Please choose [Y/N] for Yes or No."
 		fi
 	else
 		echo "You have chosen to start the following processes: ($@)"
 		read -p "Do you wish to continue with your selection? [Y/N] " EXIT
-		if [ "${EXIT^^}" == "Y" ]; then
+		if [ "${EXIT^^}" == "N" ]; then
 			confirmExit
-		else
-			if [[ "$[*]" =~ "tick" ]]; then
+		elif [ "${EXIT^^}" == "Y" ]; then
+			if [[ "$@[*]" =~ "tick" ]]; then
 				echo ""
 				echo "Starting Tickerplant: "
 				echo "$startTP"
@@ -120,6 +122,8 @@ while [[ $RUN -eq 0 ]]; do
                                 eval $startCEP
                         fi
  			RUN=1
+		else
+			echo "${EXIT} is not a valid input. Please choose from [Y/N]."
 		fi
 	fi
 done

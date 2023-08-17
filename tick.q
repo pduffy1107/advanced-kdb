@@ -1,12 +1,12 @@
 // Call sym file
 /q tick.q SRC [DST] [-p 5010] [-o h]
-system"l tick/",(src:first .z.x,enlist"sym"),".q"
+system"l ",(src:first .z.x,enlist"sym")
 
 // Load u.q and logging.q
-\l tick/u.q
-\l log/logging.q`
+system "l ",getenv[`AdvancedKDB],"/tick/u.q"
+system "l ",getenv[`AdvancedKDB],"/log/logging.q"
 
-if[not system"p";.log.out["No port set. Setting port to 5010"; system"p 5010"]
+if[not system"p";.log.out["No port set. Setting port to 5010"; system"p 5010"]]
 
 \d .u
 
@@ -55,7 +55,6 @@ ts:{if[d<x;
 
 // Batch mode
 // If Ticker Timer is active, enable periodic publishing to subscribers
-
 if[system"t"; .log.out["Enabling Batch Mode..."];
 	// Publish data to subscribers
 	.z.ts:{pub'[t;value each t];
@@ -80,7 +79,8 @@ if[system"t"; .log.out["Enabling Batch Mode..."];
 if[not system"t"; .log.out["Enabling Non-Batch Mode..."];
 	system"t 1000";
  	.z.ts:{ts .z.D};
- 	upd:{[t;x]ts"d"$a:.z.P;				// Update table (t) with data (x)
+ 	upd:{[t;x] 
+		ts"d"$a:.z.P;					// Update table (t) with data (x)
  		if[not -16=type first first x;
 			a:"n"$a;
 			x:$[0>type first x;
@@ -88,7 +88,7 @@ if[not system"t"; .log.out["Enabling Non-Batch Mode..."];
 				(enlist(count first x)#a),x]];
  		f:key flip value t;
 		
-		pub[t;					// Publish data to subscriber
+		pub[t;						// Publish data to subscriber
 			$[0>type first x;
 			enlist f!x;
 			flip f!x]];

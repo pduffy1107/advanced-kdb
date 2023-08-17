@@ -14,10 +14,10 @@ cd ${AdvancedKDB}
 
 # Find PIDs of running processes
 tickPID=$(ps -ef | grep -v grep | grep "tick.q"|grep "${TP_PORT}" |awk '{print $2}')
-rdbPID=$(ps -ef | grep -v grep | grep "tick.q"|grep "${RDB_TAQ_PORT}" |awk '{print $2}')
-aggPID=$(ps -ef | grep -v grep | grep "tick.q"|grep "${RDB_AGG_PORT}" |awk '{print $2}')
-fhPID=$(ps -ef | grep -v grep | grep "tick.q"|grep "${FH_PORT}" |awk '{print $2}')
-cepPID=$(ps -ef | grep -v grep | grep "tick.q"|grep "${CEP_PORT}" |awk '{print $2}')
+rdbPID=$(ps -ef | grep -v grep | grep "rdb_taq.q"|grep "${RDB_TAQ_PORT}" |awk '{print $2}')
+aggPID=$(ps -ef | grep -v grep | grep "rdb_agg.q"|grep "${RDB_AGG_PORT}" |awk '{print $2}')
+fhPID=$(ps -ef | grep -v grep | grep "feed.q"|grep "${FH_PORT}" |awk '{print $2}')
+cepPID=$(ps -ef | grep -v grep | grep "cep.q"|grep "${CEP_PORT}" |awk '{print $2}')
 
 # If no arguments passed, then exit
 if [ -z $1 ]; then
@@ -34,9 +34,8 @@ fi
 # Exit Procedure
 confirmExit () {
         read -e -p "You have chosen to exit. Are you sure? [Y/N] " CONFIRM
-        if [ "$CONFIRM" == "Y" ]; then
+        if [ "${CONFIRM^^}" == "Y" ]; then
                 echo "Exiting..."
-                writeLog "Exit option chosen. Exiting addCMTP.sh..."
                 exit 0
         fi
 }
@@ -49,18 +48,21 @@ stopProcess () {
 			kill -9 $1
 			echo "$2 is no longer running."
 			echo "$LINE"
-		else
+		elif [ "${STOP^^}" == "N" ]; then
 			read -p "Do you wish to exit? [Y/N] " EXIT
 			if [[ "${EXIT^^}" == "Y" ]]; then
 				confirmExit
 			fi
+		else
+                        echo "$EXIT is not a valid input. Please choose [Y/N] for Yes or No."
 		fi
 	else
 		echo "$2 is not a running process. Skipping..."
+		echo "$LINE"
 	fi	
 }
 
-RUN=0
+declare -g RUN=0
 while [[ $RUN -eq 0 ]]; do
 	if [[ "$@[*]" =~ "all" ]]; then
 		read -p "You have chosen to stop ALL processes. Are you sure you wish to continue? [Y/N] " CONTINUE
@@ -77,10 +79,10 @@ while [[ $RUN -eq 0 ]]; do
 	else
                 echo "You have chosen to stop the following processes: ($@)"
                 read -p "Do you wish to continue with your selection? [Y/N] " EXIT
-                if [ "${EXIT^^}" == "Y" ]; then
+                if [ "${EXIT^^}" == "N" ]; then
                         confirmExit
-                else
-                        if [[ "$[*]" =~ "tick" ]]; then
+		elif [ "${EXIT^^}" == "Y" ]; then
+                        if [[ "$@[*]" =~ "tick" ]]; then
 	                	stopProcess "$tickPID" "Tickerplant"
                         fi
                         if [[ "$@[*]" =~ "rdb" ]]; then
@@ -95,7 +97,9 @@ while [[ $RUN -eq 0 ]]; do
                         if [[ "$@[*]" =~ "cep" ]]; then
                                 stopProcess "$cepPID" "Complex Event Processor (CEP)"
                         fi
-                        RUN=1
+			$RUN=1
+		else
+                        echo "$EXIT is not a valid input. Please choose [Y/N] for Yes or No."
                 fi
         fi
 done
