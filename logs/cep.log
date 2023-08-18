@@ -4343,3 +4343,70 @@
 2023.08.16D15:56:53.277607000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37274 | 
 2023.08.16D16:04:53.753245000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37274 | 
 2023.08.16D16:04:53.753343000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37274 | 
+2023.08.17D16:17:36.196903000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37274 | 
+2023.08.17D16:17:36.196978000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37274 | 
+'2023.08.17T16:42:17.544 hop. OS reports: Connection reset by peer
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+'2023.08.18T12:34:51.552 hop. OS reports: Connection reset by peer
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+'2023.08.18T12:36:37.480 hop. OS reports: Connection reset by peer
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+2023.08.18D12:38:35.353830000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37269 | 
+2023.08.18D12:38:35.353884000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37269 | 
+2023.08.18D12:57:10.968861000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37263 | 
+2023.08.18D12:57:10.968907000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37263 | 
+2023.08.18D12:58:14.235858000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37232 | 
+2023.08.18D12:58:14.235912000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37232 | 
+2023.08.18D13:03:31.928018000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37232 | 
+2023.08.18D13:03:31.928069000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37232 | 
+2023.08.18D13:20:34.347790000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37232 | 
+2023.08.18D13:20:34.347846000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37232 | 
+'2023.08.18T13:26:44.431 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+2023.08.18D13:28:06.131679000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37199 | 
+2023.08.18D13:28:06.131727000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37199 | 
+'2023.08.18T13:28:06.132 ./tick/sym.q. OS reports: File exists
+  [4]  \cd ./tick/sym.q
+       ^
+  [3]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:49: .u.rep:
+        -11!y;                                                  // Replay appropriate number of messages from the start of the TP logfile
+        system "cd ",1_-10_string first reverse y}
+        ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:51: .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                              ^
+2023.08.18D13:29:25.525404000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37199 | 
+2023.08.18D13:29:25.525454000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37199 | 
+'2023.08.18T13:29:25.528 ./tick/sym.q. OS reports: File exists
+  [4]  \cd ./tick/sym.q
+       ^
+  [3]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:49: .u.rep:
+        -11!y;                                                  // Replay appropriate number of messages from the start of the TP logfile
+        system "cd ",1_-10_string first reverse y}
+        ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:51: .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                              ^
+2023.08.18D14:09:02.326399000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37199 | 
+2023.08.18D14:09:02.326446000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37199 | 
+'2023.08.18T14:09:02.376 ./tick/sym.q. OS reports: File exists
+  [4]  \cd ./tick/sym.q
+       ^
+  [3]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:49: .u.rep:
+        -11!y;                                                  // Replay appropriate number of messages from the start of the TP logfile
+        system "cd ",1_-10_string first reverse y}
+        ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:51: .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                              ^
+'2023.08.18T14:24:34.901 hop. OS reports: Connection refused
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+'2023.08.18T14:37:32.434 hop. OS reports: Connection reset by peer
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/tick/cep.q:1: h: neg hopen hsym `$":localhost:5010"
+                                                             ^
+2023.08.18D14:50:37.043978000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37269 | 
+2023.08.18D14:50:37.044061000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37269 | 
+2023.08.18D15:02:47.524854000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37229 | 
+2023.08.18D15:02:47.524920000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37229 | 

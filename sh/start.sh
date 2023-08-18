@@ -14,7 +14,8 @@ source $DIR/config.env
 
 cd ${AdvancedKDB}
 
-startTP="q tick.q ${Sym_File} ${TP_Log} -p ${TP_PORT} -t ${Tick_Timer} </dev/null >> ${Log_Dir}/tp.log 2>&1 &"
+startTP="q tick.q ${Sym_File} ${TP_Log} -p ${TP_PORT} -t ${Tick_Timer} </dev/null >> ${Log_Dir}/tick.log 2>&1 &"
+#startTP="q tick.q tick/sym.q . -p 5010 -t 1000 1>> ${AdvancedKDB}/logs/tick.log 2>&1 &"
 startRDB="q ${RDB_Dir}/rdb_taq.q :${TP_PORT} -p ${RDB_TAQ_PORT} </dev/null >> ${Log_Dir}/rdb_taq.log 2>&1 &"
 startAGG="q ${RDB_Dir}/rdb_agg.q :${TP_PORT} -p ${RDB_AGG_PORT} </dev/null >> ${Log_Dir}/rdb_agg.log 2>&1 &"
 startFH="q tick/feed.q -p ${FH_PORT} </dev/null >> ${Log_Dir}/feedhandler.log 2>&1 &"

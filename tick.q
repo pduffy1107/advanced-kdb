@@ -1,6 +1,8 @@
 // Call sym file
 /q tick.q SRC [DST] [-p 5010] [-o h]
-system"l ",(src:first .z.x,enlist"sym")
+system"l tick/",(src:first .z.x,enlist"sym"),".q"
+
+0N!raze string[first .z.x,enlist"sym"]
 
 // Load u.q and logging.q
 system "l ",getenv[`AdvancedKDB],"/tick/u.q"
@@ -33,8 +35,8 @@ tick:{init[];
 	d::.z.D;
 	// Runs load function (opening handle to log file)
 	if[l::count y;
-		L::`$":",y,"/",x,10#"."
-		;l::ld d]};
+		L::`$":",y,"/",x,10#".";
+		l::.u.ld d]};
 
 // End-Of-Day (EOD) function.
 // Runs the EOD process, Increase daycount, close handle to current day logs
