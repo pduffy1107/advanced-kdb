@@ -941,3 +941,5 @@
 2023.08.18D14:50:37.047359000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36791 | 
 2023.08.18D15:02:47.543175000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
 2023.08.18D15:02:47.543238000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.18D17:16:20.688426000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.18D17:16:20.689613000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
