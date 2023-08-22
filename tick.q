@@ -2,7 +2,6 @@
 /q tick.q SRC [DST] [-p 5010] [-o h]
 system"l tick/",(src:first .z.x,enlist"sym"),".q"
 
-0N!raze string[first .z.x,enlist"sym"]
 
 // Load u.q and logging.q
 system "l ",getenv[`AdvancedKDB],"/tick/u.q"
@@ -65,7 +64,7 @@ if[system"t"; .log.out["Enabling Batch Mode..."];
 		ts .z.D}; 			// check for EOD
 	// Update function, which inserts data (x) into table (t)
  	upd:{[t;x]
- 		if[not -16=type first first x;
+		if[not -16=type first first x;
 			if[d<"d"$a:.z.P;
 				.z.ts[]];
 				a:"n"$a;

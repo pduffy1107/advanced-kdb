@@ -1,0 +1,37 @@
+The function StringtoDate is using conditional statements to check the type of each entry and cast to Date depending on the type. 
+
+q)StringtoDate:{[x]{$[10h~abs type x;x:"D"$x;-14h~ type x;x:x;`date$x]}'[x]}
+q)StringtoDate input
+2010.01.01 2010.01.02 2010.01.01 2010.01.02 2010.01.01 2010.01.02 2010.01.01 ..
+q)\ts StringtoDate input
+370 20583088
+
+Looking at the current function, some obvious format changes include:
+- Removing "[x]" at the start of the function (redundant as q automatically assigns the first argument to local variable "x").
+- -14h is a datetype and therefore does not require changing. Hence we can remove the condition "-14h~ type x;x:x".
+- "`date$x" casts any other datatype than string to Date. However, there is no other datatypes than string and date in our input, therefore we can remove it.
+
+Conditional evaluations are typically slow. We can modify the function to vector evaluation.
+
+q)newS2D:{"D"$x[where 10=abs type each x]}
+q)newS2D input
+2010.01.01 2010.01.02 2010.01.01 2010.01.02 2010.01.01 2010.01.02 2010.01.01 ..
+q)\ts newS2D input
+62 26485968
+q)\ts StringtoDate input
+370 20583088
+
+This is considerably faster than before (1/6th of the time taken with little additional memory usage).
+
+As there could be a possibility that a non-string, non-date datatype could be inputted to the function, we can make use of conditional evaluation mixed with vector evaluation.
+The following function checks the unique datatypes in the list, and excludes the datatypes string (10h) and date (14h). If we have strings in the list, we cast all strings to date using "D"$.
+If there are other data types, then cast using `date$x
+
+q)newS2D:{u:distinct abs type each x;v: u except 10; v:v except 14; $[10h in u; "D"$x[where 10h=abs type each x];count v >0; `date$x[where not 14=abs type each x]]}
+q)newS2D input
+2010.01.01 2010.01.01 2010.01.01 2010.01.01 2010.01.01 2010.01.01 2010.01.01 ..
+q)\ts newS2D
+0 304
+q)\ts newS2D input
+89 26486048
+

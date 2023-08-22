@@ -18,7 +18,7 @@ upd:{[t;d] MC+:1;
 checkTable:{[t;d] 
 	if[not (type d) in 98 99h;
 		schema: key flip value t;
-		d: if[0>type first d;
+		d: $[0>type first d;
 			enlist schema!d;
 			flip schema!d];];
 	};

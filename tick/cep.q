@@ -27,7 +27,7 @@ updAggTbl:{aggTrade:: select minPx: min px, maxPx: max px, volume:sum[px*sz] by 
 checkTable:{[t;d] 
         if[not (type d) in 98 99h;
                 schema: key flip value t;
-                d: if[0>type first d;
+                d: $[0>type first d;
                         enlist schema!d;
                         flip schema!d];];
         };

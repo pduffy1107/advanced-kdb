@@ -1,0 +1,141 @@
+In order to fix the broken log file, one must observe its contents. 
+1) Enter into a q prompt. Create a trade table and upd function for the '-11!'. 
+- One can try to run '-11!`:tplog', but it will fail with a type error:
+q)trade:([] sym:`$(); price:"f"$(); size:"j"$())
+q)trade
+sym price size
+--------------
+q)meta trade
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j    
+q)upd: insert
+q)-11!`:broken_tplog
+'type
+  [0]  -11!`:broken_tplog
+          ^
+
+- Insert has failed due to 'type' error. One can investigate further to see what exactly is failing by editing the upd function:
+
+q)upd:{[t;d] 0N!type each value flip d; t insert d}
+q)-11!`:broken_tplog
+11 9 7h
+11 9 7h
+10 9 7h
+'type
+  [1]  upd:{[t;d] 0N!type each value flip d; t insert d}
+                                               ^
+- Type of the sym column on row 3 is 10 (char) rather than 11 (symbol).
+
+2) Run 'get `:<logFileLocation>' to return values:
+- Here one can get a full view of the tplog (use '\c 250 250' to increase console size)
+q)get `:broken_tplog
+(`upd;`trade;+`sym`price`size!(`A`C`B`C`B;9.025784 4.470818 1.387079 9.409523 0.0283353;37 77 28 26 84))
+(`upd;`trade;+`sym`price`size!(`A`D`A`A`C;5.339515 9.387084 3.027801 4.448492 4.414491;9 74 55 92 14))
+(`upd;`trade;+`sym`price`size!("ACBCD";6.88089 6.377554 0.3845637 8.972357 7.935513;94 19 12 11 1))
+(`upd;`trade;+`sym`price`size!(`C`E`B`D`E;9.082711 9.796094 3.077491 3.652273 9.591177;4 46 99 52 10))
+(`upd;`trade;+`sym`price`size!(`F`F`C`F`D;7.24948 8.112026 2.086614 9.907116 5.794801;36.96114 11.75355 92.34386 40.15936 56.19037))
+(`upd;`trade;+`sym`price`size!(`A`C`E`D`E;6.919292 9.471555 3.40393 9.614594 2.699208;32 82 81 56 81))
+,`upd
+,`trade
+,+`sym`price`size!(`D`B`D`B`C;6.718125 8.639591 8.439807 5.426371 0.7757332;24 61 30 89 14)
+(`upd;`trade;+`sym`price`size!("FDAEB";2.062569 4.81821 2.065625 5.229178 3.338806;56 90 63 28 51))
+
+- Multiple issues can be spotted:
+	> The datatype of some sym columns are incorrect (should be symbol and not char)
+	> The datatype of one size column is float instead of long.
+	> One row has been split into three separate rows.
+
+3) From here, one should find ways to resolve each issue separately.
+
+- Using the update function can help fix the datatype errors:
+q)lf:get `:broken_tplog
+q)lf[2;2]
+sym price     size
+------------------
+A   6.88089   94  
+C   6.377554  19  
+B   0.3845637 12  
+C   8.972357  11  
+D   7.935513  1   
+q)meta lf[2;2]
+c    | t f a
+-----| -----
+sym  | c    
+price| f    
+size | j
+q)update `$string[sym], "j"$size from lf[2;2]
+sym price     size
+------------------
+A   6.88089   94  
+C   6.377554  19  
+B   0.3845637 12  
+C   8.972357  11  
+D   7.935513  1   
+q)meta update `$string[sym], "j"$size from lf[2;2]
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j 
+
+q)lf[4;2]
+sym price    size    
+---------------------
+F   7.24948  36.96114
+F   8.112026 11.75355
+C   2.086614 92.34386
+F   9.907116 40.15936
+D   5.794801 56.19037
+q)meta lf[4;2]
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | f 
+q)meta update `$string[sym], "j"$size from lf[4;2]
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j 
+
+- Luckily, 'x cut y' keyword segments list y into x chunks. Using '3 cut raze lf' will remove the separated rows.
+
+q)lf:get `:broken_tplog
+q)lf
+(`upd;`trade;+`sym`price`size!(`A`C`B`C`B;9.025784 4.470818 1.387079 9.409523..
+(`upd;`trade;+`sym`price`size!(`A`D`A`A`C;5.339515 9.387084 3.027801 4.448492..
+(`upd;`trade;+`sym`price`size!("ACBCD";6.88089 6.377554 0.3845637 8.972357 7...
+(`upd;`trade;+`sym`price`size!(`C`E`B`D`E;9.082711 9.796094 3.077491 3.652273..
+(`upd;`trade;+`sym`price`size!(`F`F`C`F`D;7.24948 8.112026 2.086614 9.907116 ..
+(`upd;`trade;+`sym`price`size!(`A`C`E`D`E;6.919292 9.471555 3.40393 9.614594 ..
+,`upd
+,`trade
+,+`sym`price`size!(`D`B`D`B`C;6.718125 8.639591 8.439807 5.426371 0.7757332;2..
+(`upd;`trade;+`sym`price`size!("FDAEB";2.062569 4.81821 2.065625 5.229178 3.3..
+q)3 cut raze lf
+`upd `trade +`sym`price`size!(`A`C`B`C`B;9.025784 4.470818 1.387079 9.409523 ..
+`upd `trade +`sym`price`size!(`A`D`A`A`C;5.339515 9.387084 3.027801 4.448492 ..
+`upd `trade +`sym`price`size!("ACBCD";6.88089 6.377554 0.3845637 8.972357 7.9..
+`upd `trade +`sym`price`size!(`C`E`B`D`E;9.082711 9.796094 3.077491 3.652273 ..
+`upd `trade +`sym`price`size!(`F`F`C`F`D;7.24948 8.112026 2.086614 9.907116 5..
+`upd `trade +`sym`price`size!(`A`C`E`D`E;6.919292 9.471555 3.40393 9.614594 2..
+`upd `trade +`sym`price`size!(`D`B`D`B`C;6.718125 8.639591 8.439807 5.426371 ..
+`upd `trade +`sym`price`size!("FDAEB";2.062569 4.81821 2.065625 5.229178 3.33
+
+4) Combine the fixes into one using the Amend operator
+
+tplogRepair1:{[tplogPath] logFileHandle: get hsym tplogPath; `:fixed_tplog set .[3 cut raze logFileHandle; (::;2); {update `$string[sym], "j"$size from x} each]}
+
+q) get `:fixed_tplog
+`upd `trade +`sym`price`size!(`A`C`B`C`B;9.025784 4.470818 1.387079 9.409523 0.0283353;37 77 28 26 84)
+`upd `trade +`sym`price`size!(`A`D`A`A`C;5.339515 9.387084 3.027801 4.448492 4.414491;9 74 55 92 14)  
+`upd `trade +`sym`price`size!(`A`C`B`C`D;6.88089 6.377554 0.3845637 8.972357 7.935513;94 19 12 11 1)  
+`upd `trade +`sym`price`size!(`C`E`B`D`E;9.082711 9.796094 3.077491 3.652273 9.591177;4 46 99 52 10)  
+`upd `trade +`sym`price`size!(`F`F`C`F`D;7.24948 8.112026 2.086614 9.907116 5.794801;37 12 92 40 56)  
+`upd `trade +`sym`price`size!(`A`C`E`D`E;6.919292 9.471555 3.40393 9.614594 2.699208;32 82 81 56 81)  
+`upd `trade +`sym`price`size!(`D`B`D`B`C;6.718125 8.639591 8.439807 5.426371 0.7757332;24 61 30 89 14)
+`upd `trade +`sym`price`size!(`F`D`A`E`B;2.062569 4.81821 2.065625 5.229178 3.338806;56 90 63 28 51)

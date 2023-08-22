@@ -1,45 +1,47 @@
 // Load logging.q and sym.q
-system "l ",getenv[`AdvancedKDB],"/log/logging.q"
-system "l ",getenv[`AdvancedKDB],"/tick/sym.q"
+system "l ",getenv[`AdvancedKDB],"/log/logging.q";
+system "l ",getenv[`AdvancedKDB],"/tick/sym.q";
 
-args:.Q.opt .z.x
+args:.Q.opt .z.x;
 
-tpDate:"D"$(raze ":",args[`date]);
+tpDate:(raze args[`date]);
 tpLog:`$(raze args[`dir]);
 
-
-// Update function.
-// Insert data (d) into table (t)
-upd:{[t;d]
-        if[t in tables[];
-                checkTable[t;d];
-                insert[t;d]];
-        };
-
-
-// Datatype checker Function
-// If data is not in table format, convert to table
-checkTable:{[t;d] 
-        if[not (type d) in 98 99h;
-                schema: key flip value t;
-                d: if[0>type first d;
-                        enlist schema!d;
-                        flip schema!d];];
-        };
+upd:insert
 
 // Generates a list of all log files in the TPLog directory.
-files:system "find ",string[tpLog],"/ -maxdepth 1 -type f"
+files:system "find ",string[tpLog],"/ -maxdepth 1 -type f";
 
-files:`$":",'files
+files:`$":",'files;
 
 // Get the dates log file
-logFile:files[where like[string files;"*",raze string tpDate]]
+logFile:files[where like[string files;"*",raze string tpDate]];
 
-saveHDB: .Q.hdpf[`.;`:db/hdb;tpDate;`sym] each tables[`.];
+.log.out["Replaying log file: ",raze string logFile]
 
-hdbDir:`:db/hdb
+-11!logFile 0
 
-compressHDB:{
+hdbDir:`$":",getenv[`AdvancedKDB],"/db/hdb/";
 
+.log.out["Saving tables to HDB disk."]
+saveHDB: .Q.hdpf[`.;hdbDir;"D"$tpDate;`sym] each tables[];
 
+// Creates a nested list of all tables and corresponding columns to be compressed
+columnMatrix:`$(raze string[hdbDir],string[tpDate],"/"),/:/: (string[tables[]],/:' ("/",/:'string ((cols each tables[]) except\: `time`sym)));
+
+.log.out["Beginning HDB Column Compression"]
+
+HDBCompression:{[column] a:"/" vs string column;
+	colName:a[-1 + count a];
+	preComp:(key -21!column); 							// Get filesize of column before compression
+	-19!(column;column;17;2;6);							// Beginning compression
+	postComp:(key -21!column);							// Get filesize of column after compression
+	$[not postComp~preComp; 							// Check that preComp and postComp do not match. If they match, no compression took place.
+		(::); 
+		.log.err["Column \"",colName,"\" could not be compressed. Please investigate. Size before compression: ",raze string preComp,"; Size after compression: ",raze string postComp]];
+	}
+
+(@'/:)[HDBCompression;columnMatrix]
+.log.out["HDB writedown and compression process complete. Exiting eod.q..."]
+exit 0
 

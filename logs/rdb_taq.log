@@ -943,3 +943,260 @@
 2023.08.18D15:02:47.543238000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
 2023.08.18D17:16:20.688426000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
 2023.08.18D17:16:20.689613000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.19D15:50:24.004643000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:691 | symw:36751 | 
+2023.08.19D15:50:24.006427000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:691 | symw:36751 | 
+2023.08.21D13:24:49.647177000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.21D13:24:49.648400000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.21D15:05:55.992018000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.21D15:05:55.992955000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.21D17:40:41.047590000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.21D17:40:41.049112000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:691 | symw:36751 | 
+2023.08.22D09:29:29.970246000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:384496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:691 | symw:36751 | 
+2023.08.22D09:29:29.971811000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:384560 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:691 | symw:36751 | 
+'2023.08.22T09:50:54.253 ]
+  [6]  /home/pduffy1_kx_com/AdvancedKDB/log/logging.q:16: .z.po:{.log.out[raze[("Connection opened on Handle ",str .z.w]};
+                                                                                                                       ^
+  [3]  \l /home/pduffy1_kx_com/AdvancedKDB/log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`AdvancedKDB],"/log/logging.q"
+                                                         ^
+'2023.08.22T09:53:05.939 ]
+  [6]  /home/pduffy1_kx_com/AdvancedKDB/log/logging.q:16: .z.po:{.log.out[raze[("Connection opened on Handle ",.log.str[.z.w]]};
+                                                                                                                             ^
+  [3]  \l /home/pduffy1_kx_com/AdvancedKDB/log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`AdvancedKDB],"/log/logging.q"
+                                                         ^
+'2023.08.22T09:54:24.632 ]
+  [6]  /home/pduffy1_kx_com/AdvancedKDB/log/logging.q:16: .z.po:{.log.out[raze[("Connection opened on Handle ",.log.str[.z.w]]]};
+                                                                                                                             ^
+  [3]  \l /home/pduffy1_kx_com/AdvancedKDB/log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`AdvancedKDB],"/log/logging.q"
+                                                         ^
+'2023.08.22T09:54:58.772 ]
+  [6]  /home/pduffy1_kx_com/AdvancedKDB/log/logging.q:16: .z.po:{.log.out[raze[("Connection opened on Handle ",.log.str[.z.w]]]};
+                                                                                                                             ^
+  [3]  \l /home/pduffy1_kx_com/AdvancedKDB/log/logging.q
+       ^
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:5: system "l ",getenv[`AdvancedKDB],"/log/logging.q"
+                                                         ^
+2023.08.22D09:56:34.115797000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385872 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+2023.08.22D09:56:34.115881000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385936 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+'2023.08.22T09:56:34.135 rank
+  [5]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:23: checkTable:
+ 		enlist schema!d;
+ 		flip schema!d];];
+ 		^
+ }
+  [4]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:11: upd:
+ if[t in tables[];
+ 	checkTable[t;d];
+ 	^
+ 	insert[t;d]];
+  [3]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:48: .u.rep:
+ .log.out["Replaying log file."];
+ -11!y;							// Replay appropriate number of messages from the start of the TP logfile
+    ^
+ system "cd ",1_-10_string first reverse y}
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:57: .u.rep .(hopen `$":",.u.x 0)"((.u.sub[`quote;`];.u.sub[`trade;`]);`.u `i`L)";
+                                                                 ^
+2023.08.22D09:59:09.381291000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385872 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+2023.08.22D09:59:09.381348000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385936 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+'2023.08.22T09:59:09.395 rank
+  [5]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:23: checkTable:
+ 		enlist schema!d;
+ 		flip schema!d];];
+ 		^
+ }
+  [4]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:11: upd:
+ if[t in tables[];
+ 	checkTable[t;d];
+ 	^
+ 	insert[t;d]];
+  [3]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:48: .u.rep:
+ .log.out["Replaying log file."];
+ -11!y;							// Replay appropriate number of messages from the start of the TP logfile
+    ^
+ system "cd ",1_-10_string first reverse y}
+  [2]  /home/pduffy1_kx_com/AdvancedKDB/RDB/rdb_taq.q:57: .u.rep .(hopen `$":",.u.x 0)"((.u.sub[`quote;`];.u.sub[`trade;`]);`.u `i`L)";
+                                                                 ^
+2023.08.22D10:04:36.036572000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385872 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+2023.08.22D10:04:36.036667000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385936 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+2023.08.22D10:04:36.069040000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:616464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:703 | symw:37190 | 
+2023.08.22D10:08:38.439825000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:616432 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:703 | symw:37190 | 
+2023.08.22D10:08:45.564160000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385872 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+2023.08.22D10:08:45.564213000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385936 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:695 | symw:36865 | 
+2023.08.22D10:08:45.594490000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:628752 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:703 | symw:37190 | 
+2023.08.22D10:09:58.111806000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:705 | symw:37244 | 
+2023.08.22D10:09:58.111962000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:09:58.112107000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:09:58.112209000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:10:14.540967000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:10:14.541108000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:10:14.541244000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:10:14.541346000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:26.783194000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:26.783398000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:26.783566000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:26.783671000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:37.806256000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:37.806397000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:37.806534000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:12:37.806636000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:07.493130000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:07.493292000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:07.493433000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:630816 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:07.493545000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:630784 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:55.905131000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:55.905280000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:55.905417000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:55.905545000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:58.769328000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:58.769479000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:58.769617000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:13:58.769719000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:02.697160000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:02.697298000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:02.697433000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:02.697547000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:05.008323000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:05.008464000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:05.008660000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:05.008777000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:07.074753000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:07.074892000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:07.075028000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:631328 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:14:07.075147000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:631296 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:15:49.829634000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:647712 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:15:49.829792000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:647680 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:15:49.829949000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:647712 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:15:49.830052000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:647680 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:16:12.626219000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:647712 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:16:12.626364000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:647680 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:16:12.626500000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:647712 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:16:12.626603000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:647680 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:55.160889000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:648736 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:55.161040000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:648704 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:55.161181000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:648736 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:55.161286000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:648704 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:57.666265000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:648736 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:57.666411000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:648704 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:57.666563000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:648736 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:17:57.666666000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:648704 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:18:45.043847000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:648736 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:18:45.044006000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:648704 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:18:45.044142000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:648736 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:18:45.044243000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:648704 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:21:22.436718000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:845344 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:21:22.436894000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:845312 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:21:22.437055000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:845344 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:21:22.437159000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:845312 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:24:39.120696000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:855584 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:24:39.120854000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:855552 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:24:39.120993000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:855584 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:24:39.121098000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:855552 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:25:28.053613000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:855584 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:25:28.053774000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:855552 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:25:28.053915000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:855584 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:25:28.054018000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:855552 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:13.003705000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:856608 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:13.003843000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:856576 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:13.004014000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:856608 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:13.004117000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:856576 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:27.445831000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:856608 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:27.445977000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:856576 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:27.446154000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:856608 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:27.446257000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:856576 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:52.982880000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:864800 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:52.983046000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:864768 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:52.983205000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:864800 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:26:52.983361000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:864768 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:27:04.166082000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:864800 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:27:04.166247000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:864768 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:27:04.166397000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:864800 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:27:04.166501000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:864768 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:20.678637000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:872992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:20.678794000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:872960 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:20.678951000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:872992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:20.679057000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:872960 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:38.277256000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:872992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:38.277393000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:872960 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:38.277532000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:872992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:29:38.277634000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:872960 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:30:43.447521000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:872992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:30:43.447678000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:872960 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:30:43.447827000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:872992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:30:43.447930000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:872960 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:48.282001000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:889376 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:48.282160000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:889344 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:48.282305000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:889376 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:48.282408000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:889344 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:56.872194000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:889376 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:56.872339000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:889344 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:56.872489000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:889376 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D10:31:56.872602000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:889344 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D11:22:15.827215000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406432 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:706 | symw:37271 | 
+2023.08.22D11:36:45.826951000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385872 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:695 | symw:36865 | 
+2023.08.22D11:36:45.828065000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385936 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:695 | symw:36865 | 
+2023.08.22D11:36:45.941502000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1404432 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:703 | symw:37190 | 
+2023.08.22D11:40:44.544012000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:705 | symw:37244 | 
+2023.08.22D11:40:44.544244000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:40:44.545256000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:40:44.545444000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:12.172211000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:12.172439000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:12.172560000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:12.172770000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:15.069871000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:15.070025000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:15.070212000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:15.070349000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:21.259649000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:21.259806000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:21.259950000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:21.260051000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:39.644542000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:39.644697000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:39.644842000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:41:39.644944000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:49.598041000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:49.598232000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:49.598410000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:49.598518000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:59.468763000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:59.468926000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:59.469092000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:42:59.469194000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:43:12.718087000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:43:12.718300000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:43:12.718524000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:43:12.718642000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:19.839379000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:19.839546000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:19.839694000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:19.839798000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:30.912415000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:30.912573000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:30.912723000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:30.912829000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:32.467114000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:32.467269000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:32.467427000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:32.467538000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:34.768331000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:34.768489000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:34.768654000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:34.768758000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:36.016148000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:36.016301000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:36.016441000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:50:36.016544000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:51:55.136984000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:51:55.137153000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:51:55.137323000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1406496 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:51:55.137433000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1406464 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:52:06.028981000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1408544 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:52:06.029262000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1408512 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:52:06.030233000| USER: pduffy1_kx_com; HANDLE: 6| INFO: Connection opened on Handle 6; MEM: used:1408544 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 
+2023.08.22D11:52:06.030376000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1408512 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:706 | symw:37271 | 

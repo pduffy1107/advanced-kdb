@@ -1,0 +1,196 @@
+Load in all tables by running the following in the AdvancedKDB directory:
+q db/
+
+1) Table 1
+
+- This table is loaded in as a dictionary (flipped table)
+q)t1
+price| 9.367503 2.782122 2.392341 1.508133 1.567317 9.785 7.043314 9.441671 7..
+size | 12       10       1        90       73       90    43       90       8..
+sym  | 0        1        0        1        2        0     2        1        0..
+
+- The reason is because there is no ".d" file in the directory. Hidden file .d lists the columns in the order they appear in the table.
+
+q)system "ls -lta db/t2"
+"total 24"
+"drwxr-x--- 6 pduffy1_kx_com pduffy1_kx_com 4096 Aug 18 19:52 .."
+"drwxr-x--- 2 pduffy1_kx_com pduffy1_kx_com 4096 Aug  1 14:05 ."
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com   23 Aug  1 14:05 .d"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  208 Aug  1 14:05 price"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  216 Aug  1 14:05 size"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  124 Aug  1 14:05 sym"
+q)system "ls -lta db/t1"
+"total 20"
+"drwxr-x--- 6 pduffy1_kx_com pduffy1_kx_com 4096 Aug 18 19:52 .."
+"drwxr-x--- 2 pduffy1_kx_com pduffy1_kx_com 4096 Aug  1 14:05 ."
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  216 Aug  1 14:05 price"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  216 Aug  1 14:05 size"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  124 Aug  1 14:05 sym"
+q)system "ls -lta db/t3"
+"total 24"
+"drwxr-x--- 6 pduffy1_kx_com pduffy1_kx_com 4096 Aug 18 19:52 .."
+"drwxr-x--- 2 pduffy1_kx_com pduffy1_kx_com 4096 Aug  1 14:05 ."
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com   23 Aug  1 14:05 .d"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  216 Aug  1 14:05 price"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  216 Aug  1 14:05 size"
+"-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com   58 Aug  1 14:05 sym"
+
+- One can add in a .d file which determines the column order. Looking at tables 2 and 3, one can see the expected column order
+q)meta t2
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j    
+q)meta t3
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j
+
+- To add a .d file, run
+`:t1/.d set `sym`price`size
+
+- Reload t1
+t1: get `:t1
+q)t1
+sym price     size
+------------------
+A   9.367503  12  
+B   2.782122  10  
+A   2.392341  1   
+B   1.508133  90  
+C   1.567317  73  
+A   9.785     90  
+C   7.043314  43  
+B   9.441671  90
+
+2) Table 2
+
+- The issue with Table 2 is that it is missing an entry in the price column.
+
+q)t2
+sym price     size
+------------------
+A   1.691043  12  
+B   3.941082  10  
+A   7.263142  1   
+B   9.216436  90  
+C   1.809536  73  
+A   6.434637  90  
+C   2.907093  43  
+B   0.7347808 90  
+A   3.159526  84  
+C   3.410485  63  
+A   8.617972  93  
+A   5.548864  54  
+A   0.6165008 38  
+B   2.85799   97  
+A   6.684724  88  
+B   9.133033  58  
+C   1.485357  68  
+C   4.857547  45  
+C   7.123602  2   
+A   3.839461  39  
+B   3.407215  64  
+B   0.5400102 49  
+C   5.497936  82  
+B   1.958467  40  
+A             88
+
+- This cannot be amended in memory:
+
+q)t2[`price]:25#t2[`price]
+'splay
+  [0]  t2[`price]:25#t2[`price]
+                 ^
+
+- Therefore we can rewrite the price column on disk by running:
+
+q) `:t2/price set 25#t2[`price]
+
+- Reload the t2 table
+
+q)t2: get `:t2
+q)t2
+sym price     size
+------------------
+A   1.691043  12  
+B   3.941082  10  
+A   7.263142  1   
+B   9.216436  90  
+C   1.809536  73  
+A   6.434637  90  
+C   2.907093  43  
+B   0.7347808 90  
+A   3.159526  84  
+C   3.410485  63  
+A   8.617972  93  
+A   5.548864  54  
+A   0.6165008 38  
+B   2.85799   97  
+A   6.684724  88  
+B   9.133033  58  
+C   1.485357  68  
+C   4.857547  45  
+C   7.123602  2   
+A   3.839461  39  
+B   3.407215  64  
+B   0.5400102 49  
+C   5.497936  82  
+B   1.958467  40  
+A   1.691043  88
+
+3) Table 3
+
+- At first glance, there doesn't appear to be anything wrong with t3
+q)meta t1
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j    
+q)meta t2
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j    
+q)meta t3
+c    | t f a
+-----| -----
+sym  | s    
+price| f    
+size | j
+
+- Looking at each of the tables, the sym column on t3 is significantly smaller...
+
+(pykx) pduffy1_kx_com@advanced-kdb:~/AdvancedKDB$ ls -lt db/*/sym
+-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com 124 Aug  1 14:05 db/t1/sym
+-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com 124 Aug  1 14:05 db/t2/sym
+-rw-r----- 1 pduffy1_kx_com pduffy1_kx_com  58 Aug  1 14:05 db/t3/sym
+
+- And running \ts shows that the space taken up is huge compared to t1:
+
+q)\ts select from t3
+0 4194896
+q)\ts select from t1
+0 688
+
+- It turns out the difference is in the sym column. The t3 sym column is not enumerated against the sym file.
+
+q)t3`sym
+`A`C`C`A`A`A`A`C`C`B`B`C`C`B`B`A`C`A`C`B`C`B`A`C`B
+q)t2`sym
+`sym$`A`B`A`B`C`A`C`B`A`C`A`A`A`B`A`B`C`C`C`A`B`B`C`B`A
+
+In order to enumerate the column, run:
+
+q)`:t3/sym set `sym$t3`sym
+`:t3/sym
+q)t3: get `:t3
+q)t3`sym
+`sym$`A`C`C`A`A`A`A`C`C`B`B`C`C`B`B`A`C`A`C`B`C`B`A`C`B
+q)\ts select from t3
+0 688 

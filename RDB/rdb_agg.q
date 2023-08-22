@@ -9,7 +9,6 @@ system "l ",getenv[`AdvancedKDB],"/log/logging.q"
 upd:{[t;d]
         if[t in tables[];
 		checkTable[t;d];
-		0N!"Table Check Passed";
 		insert[t;d]];
         };
 

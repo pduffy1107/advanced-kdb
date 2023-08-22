@@ -13,7 +13,7 @@
 
 
 // Connection Opened
-//.z.po:{.log.out[raze[("Connection opened on Handle ",str .z.w]};
+.z.po:{.log.out[raze[("Connection opened on Handle ",raze string .z.w)]]};
 
 // Connection Closed
-//.z.pc:{.log.out[raze[("Connection closed on Handle ",str .z.w]};
+.z.pc:{.log.out[raze[("Connection closed on Handle ",raze string .z.w)]]};
