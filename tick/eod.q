@@ -17,7 +17,10 @@ files:`$":",'files;
 // Get the dates log file
 logFile:files[where like[string files;"*",raze string tpDate]];
 
-.log.out["Replaying log file: ",raze string logFile]
+// Test if logfile exists
+isEmpty:`$(); 
+
+$[not logFile~isEmpty;.log.out["Replaying log file: ",raze string logFile];[.log.err["No log file found for date ",tpDate,". Exiting..."];exit 1]];
 
 -11!logFile 0
 

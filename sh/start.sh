@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+shopt -s expand_aliases
+source /etc/bash.bashrc
+
 set -e
 
 HASH="########################"

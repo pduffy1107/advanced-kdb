@@ -21,5 +21,5 @@ upd:{[table;data]
     };
 
 // Replay all logs in the TP Log directory.
-.[{-11!x};files]
+{-11!x} each files
 
