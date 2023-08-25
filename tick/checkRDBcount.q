@@ -1,4 +1,4 @@
-rdb:`::5011
+rdb:hopen `$"::",getenv[`RDB_TAQ_PORT];
 \t 1000
 
 .z.ts:{
