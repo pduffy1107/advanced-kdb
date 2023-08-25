@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+   <title>Patrick's Websocket Gatewat Process</title>
+   <style style="background-color: darkgray; color: ghostwhite;">
+        #selectSyms {width: 85%; height: 60px; float:left; padding: 10px;}
+   </style>
+</head>
+
+<body style="background-color: rgb(54, 54, 54)"; onload="connect();">
+   <!-- Create a section to filter on syms -->
+   <section class="select">
+      <h3 style="color: ghostwhite;">Select Syms: </h3>
+        <textarea style="color-scheme: dark;" id="selectSyms" placeholder="`IBM.N"></textarea>
+        <button style="background-color: azure" type="submit" onclick="send();">Filter</button>
+   </section>
+
+   <!-- Set up placeholders to display the trade and quote outputs -->
+   <section style="color-scheme: dark" id="trades" class="display">
+        <h3 style="color: ghostwhite;">Trades</h3>
+        <table style="color: rgb(221, 221, 222); width:35%; border-collapse:collapse;text-align:center; padding: 10px;
+         border: 4px solid rgb(149, 148, 148); margin-top: 10px; overflow:auto"  id="tblTrade"></table>
+   </section>
+
+   <script>
+           var ws, cmd = ""
+           var input = document.getElementById("selectSyms");
+           var output = document.getElementById("tblTrade")
+           input.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("cmdInput").click();
+                }
+             });
+           function connect() {
+                if ("WebSocket" in window) {
+                        ws = new WebSocket("ws://localhost:5018");
+                        output.value="Connecting to RDB Gateway process...";
+                        ws.onopen = function(e) {
+                        /* on successful connection, we want to create an
+                        initial subscription to load all the data into the page*/
+                        ws.send("loadPage[]");
+                        output.innerHTML="Successfully connected!";
+                        };
+                        ws.onmessage = function(e) {
+                            /*parse message from JSON String into Object*/
+                        var d = JSON.parse(e.data);
+                        console.log("Retrieved results...");
+                        setTrades(d.result);
+                        }
+
+                        ws.onclose = function(e){
+                            console.log("disconnected");
+                            output.innerHTML="Disconnected from RDB Gateway Process.";
+                        };
+                        ws.onerror = function(e){ console.log(e.data)};
+                } else alert("WebSockets not supported on your browser.");
+        }
+        function send(){
+        /*
+         store the input command so we can access it later to print with response
+        */
+                cmd = `Requesting trade results for sym: ${input.value}`;
+                console.log(cmd);
+        /* send input across websocket connection */
+                ws.send(input.value);
+        /*
+         reset the input test box to empty and focus cursor back on it for next input
+         */
+                input.value="";
+                input.focus();
+                output.innerHTML=cmd;
+        }
+        function setTrades(data) { output.innerHTML = generateTableHTML(data) }
+
+        function generateTableHTML(data){
+
+    /* we will iterate through the object wrapping it in the HTML table tags */
+                var tableHTML = '<table id="tradeTable" border="1"><tr>';
+                for (var x in data[0]) {
+        /* loop through the keys to create the table headers */
+                        tableHTML += '<th>' + x + '</th>';
+                }
+                tableHTML += '</tr>';
+
+                for (var i = 0; i < data.length; i++) {
+        /* loop through the rows, putting tags around each col value */
+                        tableHTML += '<tr>';
+                        for (var x in data[0]) {
+            /* Instead of pumping out the raw data to the table, lets
+            format it depending on if its a date, number or string*/
+                                var cellData;
+                                if("time" === x)
+                                        cellData = data[i][x].substring(2,10);
+                                else if("number" == typeof data[i][x])
+                                        cellData = data[i][x].toFixed(2);
+                                else cellData = data[i][x];
+                                        tableHTML += '<td>' + cellData + '</td>';
+                        }
+                        tableHTML += '</tr>';
+                }
+                tableHTML += '</table>';
+                return tableHTML;
+        }
+
+   </script>
+
+   <!-- Define some CSS styling on page elements -->
+   <style>
+        section {margin:10px;text-align:center;padding:20px;width:90%;}
+    button {margin:30px;width: 8%;height: 10%;}
+        h3 {margin:5px; text-align:left}
+    #tradeOutput {width: 96%; color: rgb(149, 148, 148); height: 300px; font-family: 'Times New Roman', Times, serif; padding: 10px;
+                border: 1px solid rgb(149, 148, 148); margin-top: 10px; overflow:auto; display: table;}
+    #tradeTable {color-scheme: dark; border-collapse:collapse;text-align:center;width:95%;}
+    #tradeTable td, #tradeTable th {border:4px solid rgb(186, 186, 186);padding:5px 20px;width:90%; float:left;display:table;}
+        #selectSyms {padding:10px;min-height:30px;}
+   </style>
+</body>
+</html>
