@@ -4502,3 +4502,139 @@
 2023.08.22D11:36:45.859624000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385520 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:710 | symw:37343 | 
 2023.08.22D11:36:45.860600000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385520 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:710 | symw:37343 | 
 2023.08.22D11:36:46.980026000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1409440 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:719 | symw:37622 | 
+2023.08.22D13:36:06.314369000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:2447744 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:719 | symw:37622 | 
+2023.08.22D13:36:06.314480000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:2447712 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:719 | symw:37622 | 
+2023.08.22D13:42:48.479722000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385520 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:710 | symw:37343 | 
+2023.08.22D13:42:48.481122000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385520 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:710 | symw:37343 | 
+2023.08.22D13:42:52.273416000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:2447776 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:719 | symw:37622 | 
+2023.08.22D15:37:01.671229000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:4159872 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:719 | symw:37622 | 
+2023.08.22D15:37:01.671310000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:4159840 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:719 | symw:37622 | 
+2023.08.25D14:25:35.670780000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:385520 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:710 | symw:37346 | 
+2023.08.25D14:25:35.673094000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:385520 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:710 | symw:37346 | 
+2023.08.25D14:25:35.673368000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:374432 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:716 | symw:37537 | 
+2023.08.25D15:03:07.915107000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:634240 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:719 | symw:37625 | 
+2023.08.25D15:03:07.915193000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:634208 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365744128 | syms:719 | symw:37625 | 
+2023.08.25D15:51:16.174124000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:386832 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:714 | symw:37478 | 
+2023.08.25D15:51:16.175327000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:386832 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:714 | symw:37478 | 
+'2023.08.25T15:51:16.407 .sub.conns
+'2023.08.25T16:23:23.162 5014. OS reports: Address already in use
+'2023.08.25T16:24:19.231 .sub.conns
+'2023.08.25T16:24:19.231 .sub.conns
+2023.08.25D16:24:25.994213000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:386832 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:714 | symw:37478 | 
+2023.08.25D16:24:25.994276000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:386832 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:714 | symw:37478 | 
+'2023.08.25T16:24:26.561 .sub.conns
+'2023.08.25T16:27:31.205 .sub.conns
+'2023.08.25T16:27:31.205 .sub.conns
+2023.08.25D16:33:36.960746000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37508 | 
+2023.08.25D16:33:36.960805000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37508 | 
+2023.08.25D16:33:37.575235000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:895072 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:730 | symw:37951 | 
+2023.08.25D16:42:29.219664000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:895040 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:730 | symw:37951 | 
+2023.08.25D16:42:29.219738000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:895008 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:730 | symw:37951 | 
+2023.08.25D16:44:11.287905000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:716 | symw:37537 | 
+2023.08.25D16:44:11.287961000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:716 | symw:37537 | 
+2023.08.25D16:44:12.309571000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288288 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:726 | symw:37844 | 
+2023.08.25D16:48:50.000339000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D16:48:50.000395000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D16:48:51.084059000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288288 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:48:59.024744000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288256 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:48:59.024827000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288224 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:49:34.909978000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D16:49:34.910031000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D16:49:35.694439000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288288 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:50:00.970579000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288256 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:50:00.970629000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288224 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:53:24.129188000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D16:53:24.129241000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D16:53:24.961632000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288288 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:55:01.138394000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288256 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D16:55:01.138487000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1288224 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:24:25.375324000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:24:25.376351000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:24:26.529298000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1321056 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:25:46.266256000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1321024 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:25:46.266325000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1320992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:43:08.491754000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:43:08.491833000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:43:09.509400000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1321056 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:43:58.041391000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1321024 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:43:58.041516000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1320992 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:46:04.574168000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:46:04.574247000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:46:05.609817000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1321056 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:46:29.507549000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1337408 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:46:29.507642000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1337376 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:47:41.056817000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:47:41.056871000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387216 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D18:47:42.203112000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1337440 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:50:16.643556000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1370176 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D18:50:16.643664000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1370144 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+'2023.08.25T19:15:01.467 type
+  [2]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:50: .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                               ^
+'2023.08.25T19:16:06.631 6050. OS reports: Address already in use
+2023.08.25D19:17:32.353246000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:386160 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:17:32.353326000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:386160 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+'2023.08.25T19:17:32.355 h
+  [4]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:12: upd:
+ 	updAggTbl[];							// Aggregate the data in the aggTbl table
+ 	@[neg[h];(`.u.upd; `agg; flip get each aggTbl); h"::"]		// Send the aggregated data back to TP
+ 	                                                ^
+ 	];
+  [3]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:47: .u.rep:
+        .log.out["Replaying log file."];
+        -11!y;                                                  // Replay appropriate number of messages from the start of the TP logfile
+           ^
+        system "cd ",1_-10_string first reverse y}
+  [2]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:50: .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                               ^
+2023.08.25D19:26:52.348809000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:386160 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:26:52.348894000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:386160 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+'2023.08.25T19:26:52.350 h
+  [4]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:12: upd:
+ 	updAggTbl[];							// Aggregate the data in the aggTbl table
+ 	@[neg[h];(`.u.upd; `agg; flip get each aggTbl); h"::"]		// Send the aggregated data back to TP
+ 	                                                ^
+ 	];
+  [3]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:47: .u.rep:
+        .log.out["Replaying log file."];
+        -11!y;                                                  // Replay appropriate number of messages from the start of the TP logfile
+           ^
+        system "cd ",1_-10_string first reverse y}
+  [2]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:50: .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                               ^
+2023.08.25D19:28:23.108609000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:386160 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:28:23.108700000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:386160 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+'2023.08.25T19:28:23.110 type
+  [4]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:12: upd:
+ 	updAggTbl[];							// Aggregate the data in the aggTbl table
+ 	@[neg[.u.x];(`.u.upd; `agg; flip get each aggTbl); .u.x"::"]		// Send the aggregated data back to TP
+ 	^
+ 	];
+  [3]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:47: .u.rep:
+        .log.out["Replaying log file."];
+        -11!y;                                                  // Replay appropriate number of messages from the start of the TP logfile
+           ^
+        system "cd ",1_-10_string first reverse y}
+  [2]  /home/pduffy1_kx_com/advanced-kdb/tick/cep.q:50: .u.rep .(hopen`$":",.u.x 0)"((.u.sub[`trade;`];.u.sub[`quote;`]);`.u `i`L)";
+                                                               ^
+2023.08.25D19:30:16.069444000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387536 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:30:16.069580000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387536 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:30:17.555855000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1370240 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:723 | symw:37731 | 
+2023.08.25D19:36:20.723474000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1370208 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:723 | symw:37731 | 
+2023.08.25D19:36:30.326577000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387536 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:36:30.326656000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387536 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:36:31.937111000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1370240 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:723 | symw:37731 | 
+2023.08.25D19:37:06.813640000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1370208 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:723 | symw:37731 | 
+2023.08.25D19:43:44.752481000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387504 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:43:44.752581000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387504 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:713 | symw:37424 | 
+2023.08.25D19:43:46.477245000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1370272 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:723 | symw:37731 | 
+2023.08.25D19:45:56.256829000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1403008 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:723 | symw:37731 | 
+2023.08.25D19:45:56.256898000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1402976 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:723 | symw:37731 | 
+2023.08.25D19:49:02.508430000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387504 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D19:49:02.508520000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387504 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D19:49:04.319658000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1403040 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D19:53:29.571501000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1403008 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D19:53:29.571605000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1402976 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 
+2023.08.25D19:55:40.622149000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Initialising schemas from Tickerplant.; MEM: used:387504 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D19:55:40.622232000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Replaying log file.; MEM: used:387504 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:715 | symw:37498 | 
+2023.08.25D19:55:42.426734000| USER: pduffy1_kx_com; HANDLE: 0| INFO: Connection closed on Handle 0; MEM: used:1403040 | heap:67108864 | peak:67108864 | wmax:0 | mmap:0 | mphy:8365760512 | syms:725 | symw:37805 | 

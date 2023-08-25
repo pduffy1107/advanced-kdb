@@ -24,7 +24,7 @@ if [ -z $1 ]; then
         echo "No arguments supplied..."
         echo "Please re-run script along with one of the following options:"
         echo "[1] \"all\" to stop all tickerplant processes"
-        echo "[2] (\"tick\", \"rdb\", \"rdbagg\", \"feed\", \"cep\") to stop individual processes."
+        echo "[2] (\"tick\", \"rdb\", \"agg\", \"feed\", \"cep\") to stop individual processes."
         echo "\n"
         echo "NOTE: \"rdb\" corresponds to the Trade and Quote (TAQ) RDB process."
         echo "Exiting..."
@@ -88,7 +88,7 @@ while [[ $RUN -eq 0 ]]; do
                         if [[ "$@[*]" =~ "rdb" ]]; then
                                 stopProcess "$rdbPID" "RDB (Trade and Quote)"
                         fi
-                        if [[ "$@[*]" =~ "aggrdb" ]]; then
+                        if [[ "$@[*]" =~ "agg" ]]; then
                                 stopProcess "$aggPID" "RDB (Aggregation)"
                         fi
                         if [[ "$@[*]" =~ "feed" ]]; then
@@ -97,7 +97,7 @@ while [[ $RUN -eq 0 ]]; do
                         if [[ "$@[*]" =~ "cep" ]]; then
                                 stopProcess "$cepPID" "Complex Event Processor (CEP)"
                         fi
-			$RUN=1
+			RUN=1
 		else
                         echo "$EXIT is not a valid input. Please choose [Y/N] for Yes or No."
                 fi

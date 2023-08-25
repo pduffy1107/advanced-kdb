@@ -1,4 +1,3 @@
-h: neg hopen hsym `$":localhost:5010"
 
 // Load logging script
 system "l ",getenv[`AdvancedKDB],"/log/logging.q"
@@ -38,6 +37,8 @@ if[not "w"=first string .z.o;system "sleep 1"];
 
 // Retrieve TP and HDB ports
 .u.x: .z.x,(count .z.x)_(":5010";":5012");
+
+h:neg hopen`$":localhost",.u.x 0;
 
 // Initialise schema
 .u.rep:{.log.out["Initialising schemas from Tickerplant."];

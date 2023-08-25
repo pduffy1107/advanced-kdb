@@ -9,6 +9,25 @@ system "l ",getenv[`AdvancedKDB],"/log/logging.q"
 
 if[not system"p";.log.out["No port set. Setting port to 5010"; system"p 5010"]]
 
+// Set up timer for publishing subscriber details every minute
+`.sub.globalTimer set .z.t
+
+\d .sub
+
+timer:{$[(.z.t-.sub.globalTimer)>59999;.sub.publishDetails[];::];}
+
+// Table for keeping track of subscribers/connecting processes.
+conns:([] user:`$(); handle:"i"$();hostname:`$(); time:"p"$())
+
+// Write message count and subscriber details to log output.
+publishDetails:{
+        hdls: exec distinct handle from .sub.conns;
+        msgCount: .u.i;
+        .log.out["Message counts: ",raze string msgCount,"; Subscriber handles: [","i;" sv string hdls,"]"];
+	`.sub.globalTimer set .z.t;
+        }
+
+\d .
 \d .u
 
 // Loading function.
@@ -58,7 +77,8 @@ ts:{if[d<x;
 // If Ticker Timer is active, enable periodic publishing to subscribers
 if[system"t"; .log.out["Enabling Batch Mode..."];
 	// Publish data to subscribers
-	.z.ts:{pub'[t;value each t];
+	.z.ts:{.sub.timer[];
+		pub'[t;value each t];
 		@[`.;t;@[;`sym;`g#]0#];
 		i::j;
 		ts .z.D}; 			// check for EOD
@@ -79,7 +99,7 @@ if[system"t"; .log.out["Enabling Batch Mode..."];
 
 if[not system"t"; .log.out["Enabling Non-Batch Mode..."];
 	system"t 1000";
- 	.z.ts:{ts .z.D};
+ 	.z.ts:{ts .z.D; .sub.timer[]};
  	upd:{[t;x] 
 		ts"d"$a:.z.P;					// Update table (t) with data (x)
  		if[not -16=type first first x;
@@ -97,8 +117,6 @@ if[not system"t"; .log.out["Enabling Non-Batch Mode..."];
 			l enlist (`upd;t;x);
 			i+:1];
 		}];
-
-
 
 // Initialise TickerPlant
 

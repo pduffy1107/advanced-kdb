@@ -29,14 +29,15 @@ tp:@[hopen;"J"$getenv[`TP_PORT]; {0}];
 /11h						folder does exist if type is 11h (symbol list)
 
 
-upload:{.log.out["Ingesting csv file in preparation for upload."];
-	tableName upsert flip value flip ("NSFJ"; enlist csv) 0: hsym csvFile;			// Ingest csv data into local table
-	.log.out["Uploading table ",raze string tableName," to Tickerplant."];
-	neg[tp](".u.upd";tableName;value flip get each tableName);						// push data to TP
+upload:{[table;csvFilePath] .log.out["Ingesting csv file in preparation for upload."];
+	$[table=`trade;datatypes:"NSFJ";datatypes:"NSFFJJ"];							// Check table name for correct column datatypes
+	table upsert flip value flip (datatypes; enlist csv) 0: hsym csvFilePath;				// Ingest csv data into local table
+	.log.out["Uploading table ",raze string table," to Tickerplant."];
+	neg[tp](".u.upd";table;value flip get each table);							// push data to TP
 	.log.out["Upload successful."]};
 
 // check if tableName in tables
-$[tableName in tables[]; upload[];.log.err["Table ",raze string[`tableName]," not in TickerPlant schema."]];
+$[tableName in tables[]; upload[tableName;csvFile];.log.err["Table ",raze string[`tableName]," not in TickerPlant schema."]];
 
 // Once job is done, exit
 exit 0

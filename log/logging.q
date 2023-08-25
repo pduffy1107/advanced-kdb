@@ -13,7 +13,9 @@
 
 
 // Connection Opened
-.z.po:{.log.out[raze[("Connection opened on Handle ",raze string .z.w)]]};
+.z.po:{$[`conns in key`.sub;`.sub.conns upsert (.z.u;.z.w;.z.h;.z.p);::];
+	.log.out[raze[("Connection opened on Handle ",raze string .z.w)]]};
 
 // Connection Closed
-.z.pc:{.log.out[raze[("Connection closed on Handle ",raze string .z.w)]]};
+.z.pc:{$[`conns in key`.sub;delete from `.sub.conns where user=.z.u;::];
+	.log.out[raze[("Connection closed on Handle ",raze string .z.w)]]};

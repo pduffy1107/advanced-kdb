@@ -1,0 +1,14 @@
+In order to change schema for the trade table, one must follow these steps:
+
+1) Shut down the Tickerplant and RDB/RTS processes.
+
+2) Edit trade table definition in the sym.q file to include a new column "seqNum" with datatype long.
+	trade:([] time:"n"$(); sym:`$(); px:"f"$(); sz:"j"$(); seqNum:"j"$());
+
+3) Create a new TPLOG file naming standard OR edit the currently existing TPLOGs to include the new column name.
+
+4) Use the dbmaint.q tool from code.kx.com to add a new column to our partitioned schema. The addcol function will add a new column to disk partitioned table and enumerate the column if required.
+
+5) Make any necessary changes to Real-time subscribers (e.g. possibly the CEP process).
+
+6) Restart the Ticker Plant and RDB processes. The RDB initialises from the Tickerplant so any changes made to sym.q will be picked up by the Real-time subscribers.
