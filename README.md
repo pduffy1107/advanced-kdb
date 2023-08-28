@@ -221,10 +221,10 @@ This script runs an EOD process on TP Log files by loading the contents locally,
 
 The EOD script should be called as follows:
 ```
-q tick/eod.q -date <YYYY.MM.DD> -dir <TP LOG DIR> </dev/null> >> ${Log_Dir}/eod.log 2>&1 &
+q tick/eod.q -date <YYYY.MM.DD> -dir <TP LOG DIR> </dev/null >> ${Log_Dir}/eod.log 2>&1 &
 ```
 ```
-q tick/eod.q -date 2023.08.22 -dir tplog </dev/null> >> ${Log_Dir}/eod.log 2>&1 &
+q tick/eod.q -date 2023.08.22 -dir tplog </dev/null >> ${Log_Dir}/eod.log 2>&1 &
 ```
 
 The script contains checks to confirm that the columns were compressed post-writedown and will output an error message to `eod.log` if compression fails. The script writes the partition to ```advanced-kdb/db/hdb```.
