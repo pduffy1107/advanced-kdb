@@ -28,7 +28,7 @@ Assuming you have cloned this repository to your local environment, please chang
 
 #### Startup
 
-Once you are happy with the above environment variables from the ```advanced-kdb``` directory run:
+Once you are happy with the above environment variables, from the ```advanced-kdb``` directory run:
 ```
 source sh/config.env
 ```
